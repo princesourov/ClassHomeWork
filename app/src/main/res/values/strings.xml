@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">I am Rich</string>
+    <string name="info">M: +88013xxxxxxxx\nE: jubayer.ahmed@cbg.com.bd\nW: www.cbg.com.bd</string>
+    <string name="address">Creative Skills Limited\nMotmtaz Plaza(5th Floor)\nH: 07,R:04,Dhanmondi,Dhaka</string>
+    <string name="infoo"><![CDATA[Faculty Member,App Development\nWeb & Software]]></string>
+    <string name="program">Program: Industrail Attachment in Android App Development</string>
+    <string name="name">MD. JUBAYER\nAHMED</string>
+    <string name="name2">Md Iqbal Hossain</string>
+    <string name="Id_no">ID NO\nM IA APP-25080116</string>
+    <string name="StD">STARTING DATA\n09/09/2025</string>
+    <string name="VTD">VALIDITY DATE\n25/01/2025</string>
+    <string name="BG">BLOOD GROUPO+</string>
+</resources>
