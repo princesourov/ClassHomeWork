@@ -7,6 +7,11 @@ android {
     namespace = "com.sourov.iamrich"
     compileSdk = 36
 
+    buildFeatures {
+        viewBinding = true
+        compose = false
+    }
+
     defaultConfig {
         applicationId = "com.sourov.iamrich"
         minSdk = 29
