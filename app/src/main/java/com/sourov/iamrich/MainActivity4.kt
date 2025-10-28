@@ -32,5 +32,9 @@ class MainActivity4 : AppCompatActivity() {
             val intent = Intent(this, MainActivity5::class.java)
             startActivity(intent)
         }
+        biddings.hmw15.setOnClickListener {
+            val intent = Intent(this, WebView::class.java)
+            startActivity(intent)
+        }
     }
 }

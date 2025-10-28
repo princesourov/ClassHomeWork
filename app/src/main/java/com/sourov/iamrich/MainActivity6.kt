@@ -16,8 +16,11 @@ class MainActivity6 : AppCompatActivity() {
         val email = intent.getStringExtra("email")
         val phone = intent.getStringExtra("phone")
 
-        binding.Txname.text = "Name: $name"
-        binding.Txemail.text = "Email: $email"
-        binding.Txphone.text = "Phone: $phone"
+        binding.apply {
+            Txname.text = "Name: $name"
+            Txemail.text = "Email: $email"
+            Txphone.text = "Phone: $phone"
+        }
+
     }
 }

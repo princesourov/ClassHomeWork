@@ -170,7 +170,7 @@
                 >
 
                 <LinearLayout
-                    android:id="@+id/hmw16"
+                    android:id="@+id/hmw15"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
                     android:orientation="horizontal"
@@ -181,7 +181,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:text="Homework 16"
+                        android:text="Homework 15"
                         android:gravity="center"
                         android:textColor="?android:textColorPrimary"
                         android:textSize="25sp"
