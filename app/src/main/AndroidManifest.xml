@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IAmRich">
         <activity
+            android:name=".DataAdd"
+            android:exported="false" />
+        <activity
             android:name=".ContactView"
             android:exported="false" />
         <activity
