@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:elevation="12dp"
         app:cardCornerRadius="32dp">
 
@@ -21,14 +21,30 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/Profile_img"
+            <FrameLayout
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginTop="32dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pp"
-                app:shapeAppearance="@style/circleImageView" />
+                android:layout_marginTop="32dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pp"
+                    android:visibility="gone"
+                    app:shapeAppearance="@style/circleImageView" />
+
+                <TextView
+                    android:id="@+id/AvatarText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/avatar_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/NameTv"
@@ -47,6 +63,33 @@
                 android:layout_marginTop="4dp"
                 android:text="+880130000000"
                 android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/callIC"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/call" />
+                <ImageView
+                    android:id="@+id/smsIC"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/sms" />
+                <ImageView
+                    android:id="@+id/deleteIC"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/delete" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

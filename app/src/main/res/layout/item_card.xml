@@ -19,13 +19,28 @@
             android:layout_margin="4dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/Profile_img"
+            <FrameLayout
                 android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pp"
-                app:shapeAppearance="@style/circleImageView" />
+                android:layout_height="60dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearance="@style/circleImageView"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/AvatarText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/avatar_bg" />  <!-- round bg -->
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -51,4 +66,5 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>
